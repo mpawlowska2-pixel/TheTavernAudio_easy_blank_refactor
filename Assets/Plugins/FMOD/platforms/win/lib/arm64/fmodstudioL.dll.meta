@@ -1,23 +1,29 @@
 fileFormatVersion: 2
-guid: 254f6ee9df4d3024d9c550104ea5feaf
-timeCreated: 1518408468
-licenseType: Store
+guid: 6aeab34120d3a2d4c9b1100bee233984
 PluginImporter:
-  serializedVersion: 1
+  externalObjects: {}
+  serializedVersion: 3
   iconMap: {}
   executionOrder: {}
+  defineConstraints: []
   isPreloaded: 0
+  isOverridable: 0
+  isExplicitlyReferenced: 0
+  validateReferences: 1
   platformData:
     Any:
       enabled: 0
       settings: {}
     Editor:
-      enabled: 0
-      settings:
-        DefaultValueInitialized: true
-    WebGL:
       enabled: 1
-      settings: {}
+      settings:
+        CPU: ARM64
+        DefaultValueInitialized: true
+        OS: Windows
+    Win64:
+      enabled: 1
+      settings:
+        CPU: ARM64
   userData: 
   assetBundleName: 
   assetBundleVariant: 

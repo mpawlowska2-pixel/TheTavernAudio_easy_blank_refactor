@@ -526,8 +526,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: FMOD Studio/Tavern/Tavern.fspro
-  sourceBankPath: FMOD Studio/Tavern/Build
+  sourceProjectPath: ../../../Desktop/Fmod_I_guess/Fmod_I_guess.fspro
+  sourceBankPath: ../../../Desktop/Fmod_I_guess/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 1
   ShowBankRefreshWindow: 1
@@ -539,6 +539,7 @@ MonoBehaviour:
   TargetAssetPath: FMODBanks
   TargetBankFolder: 
   EventLinkage: 0
+  SerializeGUIDsOnly: 0
   LoggingLevel: 2
   SpeakerModeSettings: []
   SampleRateSettings: []
@@ -562,22 +563,22 @@ MonoBehaviour:
   EnableErrorCallback: 0
   SharedLibraryUpdateStage: 0
   SharedLibraryTimeSinceStart: 0
-  CurrentVersion: 131617
-  HideSetupWizard: 1
+  CurrentVersion: 131859
+  HideSetupWizard: 0
   LastEventReferenceScanVersion: 131617
   Platforms:
-  - {fileID: -2778147571189435799}
-  - {fileID: 1775237884015898039}
-  - {fileID: -7089121652980687421}
-  - {fileID: -967858758032761564}
-  - {fileID: -2809369723619269698}
-  - {fileID: 2421653214563425121}
-  - {fileID: 1195175783743817721}
-  - {fileID: 80649771935770963}
-  - {fileID: -4400674060533910320}
   - {fileID: -7113343091406021913}
-  - {fileID: 7797069335900000348}
+  - {fileID: -7089121652980687421}
+  - {fileID: -4400674060533910320}
+  - {fileID: -2809369723619269698}
+  - {fileID: -2778147571189435799}
   - {fileID: -1961907823703477927}
+  - {fileID: -967858758032761564}
+  - {fileID: 80649771935770963}
+  - {fileID: 1195175783743817721}
+  - {fileID: 1775237884015898039}
+  - {fileID: 2421653214563425121}
+  - {fileID: 7797069335900000348}
   MigratedPlatforms: 080000001200000006000000050000000b000000000000000a000000090000000c000000150000000200000001000000
 --- !u!114 &80649771935770963
 MonoBehaviour:
@@ -795,16 +796,16 @@ MonoBehaviour:
     HasValue: 0
   displaySortOrder: 0
   childIdentifiers:
-  - 46fbfdf3fc43db0458918377fd40293e
-  - 2fea114e74ecf3c4f920e1d5cc1c4c40
-  - 52eb9df5db46521439908db3a29a1bbb
-  - b7716510a1f36934c87976f3a81dbf3d
-  - de700ef3f37a49b58a57ae3addf01ad9
-  - 0f8eb3f400726694eb47beb1a9f94ce8
-  - fd7c55dab0fce234b8c25f6ffca523c1
   - c88d16e5272a4e241b0ef0ac2e53b73d
-  - e7a046c753c3c3d4aacc91f6597f310d
+  - 46fbfdf3fc43db0458918377fd40293e
+  - fd7c55dab0fce234b8c25f6ffca523c1
+  - 52eb9df5db46521439908db3a29a1bbb
   - 2c5177b11d81d824dbb064f9ac8527da
+  - 2fea114e74ecf3c4f920e1d5cc1c4c40
+  - 0f8eb3f400726694eb47beb1a9f94ce8
+  - de700ef3f37a49b58a57ae3addf01ad9
+  - b7716510a1f36934c87976f3a81dbf3d
+  - e7a046c753c3c3d4aacc91f6597f310d
   codecChannels:
     Value: []
     HasValue: 0

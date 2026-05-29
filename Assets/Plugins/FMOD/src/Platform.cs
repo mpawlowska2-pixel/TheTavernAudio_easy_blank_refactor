@@ -9,30 +9,6 @@ using UnityEngine.Serialization;
 using UnityEditor;
 #endif
 
-namespace FMOD
-{
-    public partial class VERSION
-    {
-#if DEVELOPMENT_BUILD
-        public const string dllSuffix = "L";
-#else
-        public const string dllSuffix = "";
-#endif
-    }
-}
-
-namespace FMOD.Studio
-{
-    public partial class STUDIO_VERSION
-    {
-#if DEVELOPMENT_BUILD
-        public const string dllSuffix = "L";
-#else
-        public const string dllSuffix = "";
-#endif
-    }
-}
-
 namespace FMODUnity
 {
     public class PlatformCallbackHandler : ScriptableObject
@@ -272,7 +248,7 @@ namespace FMODUnity
                     case FileLayout.Release_1_10:
                         return info.path_1_10;
                     case FileLayout.Release_2_0:
-                        return string.Format("Plugins/FMOD/lib/{0}", info.baseName);
+                        return string.Format("Assets/Plugins/FMOD/lib/{0}", info.baseName);
                     case FileLayout.Release_2_1:
                     case FileLayout.Release_2_2:
                         return $"{RuntimeUtils.PluginBasePath}/platforms/{info.baseName}/lib";
@@ -421,6 +397,7 @@ namespace FMODUnity
             foreach (string path in GetObsoleteFiles())
             {
                 yield return $"{RuntimeUtils.PluginBasePath}/{path}";
+                yield return $"{RuntimeUtils.PluginBasePathDefault}/{path}";
             }
         }
 
@@ -538,14 +515,15 @@ namespace FMODUnity
 
                 FMOD.RESULT result = coreSystem.loadPlugin(pluginPath, out handle);
 
-#if UNITY_64 || UNITY_EDITOR_64
-                // Add a "64" suffix and try again
                 if (result == FMOD.RESULT.ERR_FILE_BAD || result == FMOD.RESULT.ERR_FILE_NOTFOUND)
                 {
-                    string pluginPath64 = GetPluginPath(pluginName + "64");
-                    result = coreSystem.loadPlugin(pluginPath64, out handle);
+                    if (Environment.Is64BitProcess)
+                    {
+                        // Add a "64" suffix and try again
+                        string pluginPath64 = GetPluginPath(pluginName + "64");
+                        result = coreSystem.loadPlugin(pluginPath64, out handle);
+                    }
                 }
-#endif
 
                 reportResult(result, string.Format("Loading plugin '{0}' from '{1}'", pluginName, pluginPath));
             }
