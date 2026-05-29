@@ -41,7 +41,7 @@ MonoBehaviour:
   Path: ../../../Desktop/Fmod_I_guess/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639156475831727377
+  lastModified: 639156495923539176
   FileSizes:
   - Name: Desktop
     Value: 1106
@@ -171,7 +171,7 @@ MonoBehaviour:
   Path: ../../../Desktop/Fmod_I_guess/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639156475831712349
+  lastModified: 639156495923526693
   FileSizes:
   - Name: Desktop
     Value: 11408864
@@ -232,7 +232,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -8517677565473755845}
   cacheVersion: 131859
-  cacheTime: 639156475831727377
+  cacheTime: 639156495923539176
   SerializableEventsDict:
   - key: event:/doors
     index: 0
